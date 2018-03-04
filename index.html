@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title> SH Demo</title>
+    <body>
+        <h1>Welcome Message: {{welcomeMessage}}</h1>
+        <ul>
+            {{#each messages}}
+                <li>{{this.name}}: {{this.message}}</li>
+            {{/each}}
+        </ul>
+        <form action='message'>
+            Name:
+            <br>
+            <input type='text' name='name'>
+            Message:
+            <textarea type='text' name='message'></textarea>
+            <input type ='submit' value='Submit'>
+        </form>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-secondary">Right</button>
+          </div>
+
+    </body>
+</head>
